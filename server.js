@@ -69,7 +69,7 @@ app.get("*", function (req,res){
 });
 
 app.listen(PORT, function (){
-    console.log("Listening on port.");
+    console.log("Listening on port 3000.");
     
 });
 

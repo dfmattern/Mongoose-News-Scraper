@@ -1,0 +1,70 @@
+.navbar {
+  background-color: #e3f2fd;
+  margin-bottom: 0;
+}
+.navbar-nav li a.scrape-new,
+.navbar-nav li a.clear {
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 800;
+  color: white;
+}
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding: 0;
+  box-shadow: 10px 5px 20px 2px lightslategray;
+}
+.jumbotron .background-image {
+  height: 100%;
+  background-image: url("../images/A_stack_of_newspapers.jpg");
+  background-size: cover;
+}
+.jumbotron .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: auto;
+  background: linear-gradient(#333, black);
+  opacity: 0.7;
+}
+.jumbotron .caption {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+.jumbotron .caption h1, .jumbotron .caption p{
+    color: white;
+}
+.jumbotron h1{
+    font-size: 80px;
+    font-weight: 800;
+}
+.jumbotron p{
+    font-size: 30px;
+    margin: 0 0 1em;
+}
+.article-container {
+  padding-bottom: 25px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #e3f2fd;
+}
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.text-muted {
+  color: white;
+}
