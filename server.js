@@ -55,6 +55,7 @@ app.get("/scrape", function (req, res) {
 
       result.title = $(this).children("a").text();
       result.link = $(this).children("a").attr("href");
+      
 
       db.Article.create(result)
         .then(function (dbArticle) {
