@@ -23,7 +23,7 @@ app.use(logger("dev"));
 //parse request body as JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-//make publis a static folder
+//make public a static folder
 app.use(express.static("public"));
 
 //Handlebars
@@ -44,15 +44,20 @@ mongoose.connect(MONGODB_URI);
 mongoose.Promise = Promise;
 
 //Routes
+app.get("/", function(req,res){
+  res.render("index");
+});
 
 //GET route for scraping
 app.get("/scrape", function (req, res) {
   axios.get("https://www.npr.org/sections/news/").then(function (response) {
     var $ = cheerio.load(response.data);
+//console.log(response);
 
     $("article h2").each(function (i, element) {
       var result = {};
 
+      
       result.title = $(this).children("a").text();
       result.link = $(this).children("a").attr("href");
       

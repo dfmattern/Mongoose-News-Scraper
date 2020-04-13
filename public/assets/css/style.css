@@ -1,15 +1,9 @@
-.navbar {
-  background-color: #e3f2fd;
-  margin-bottom: 0;
+.btn-sm{
+  padding: 8px;
+  margin-right: 8px;
+  background-color: burlywood;
 }
-.navbar-nav li a.scrape-new,
-.navbar-nav li a.clear {
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  font-weight: 800;
-  color: white;
-}
+
 .jumbotron {
   position: relative;
   width: 100%;
@@ -38,16 +32,17 @@
   width: 100%;
   text-align: center;
 }
-.jumbotron .caption h1, .jumbotron .caption p{
-    color: white;
+.jumbotron .caption h1,
+.jumbotron .caption p {
+  color: white;
 }
-.jumbotron h1{
-    font-size: 80px;
-    font-weight: 800;
+.jumbotron h1 {
+  font-size: 80px;
+  font-weight: 800;
 }
-.jumbotron p{
-    font-size: 30px;
-    margin: 0 0 1em;
+.jumbotron p {
+  font-size: 30px;
+  margin: 0 0 1em;
 }
 .article-container {
   padding-bottom: 25px;
